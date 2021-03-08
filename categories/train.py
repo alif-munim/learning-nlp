@@ -8,6 +8,17 @@ import os
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
+from dotenv import load_dotenv
+load_dotenv()
+
+# OR, the same with increased verbosity
+load_dotenv(verbose=True)
+
+# OR, explicitly providing path to '.env'
+from pathlib import Path  # Python 3.6+ only
+env_path = Path('.') / '.env'
+load_dotenv(dotenv_path=env_path)
+
 feature_to_train = "categories"
 headers = {"Content-Type" : "multipart/form-data"}
 
@@ -21,17 +32,17 @@ params = {
     "version": "2021-03-07"
 }
 
-uri = $URL + "/v1/models/{}".format(feature_to_train)
+uri = os.getenv("URL") + "/v1/models/{}".format(feature_to_train)
 
 print("\nCreating custom model...")
 training_data_filename = "training_data.json"
 
-with open("training_data_filename", "rb") as f:
-    response = requests.post(
+with open(training_data_filename, "rb") as f:
+    response = requests.post(uri,
         params=params,
         data=data,
         files={"training_data": (ntpath.basename(training_data_filename), f, "application/json")},
-        auth=(os.environ['USER'], os.environ['PASS']),
+        auth=(os.getenv("USER"), os.getenv("PASS")),
         verify=False,
     )
 
