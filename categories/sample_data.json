@@ -1,0 +1,108 @@
+[
+    {
+        "labels": ["Meetings"],
+        "keywords": []
+    },
+    {
+        "labels": ["Meetings", "Initiate"],
+        "keywords": []
+    },
+    {
+        "labels": ["Meetings", "Amend", "Reschedule"],
+        "keywords": []
+    },
+    {
+        "labels": ["Meetings", "Amend", "Cancel"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms", "Feedback"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms", "Feedback", "Event"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms", "Feedback", "Event", "Conference"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms", "Feedback", "Event", "Seminar"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms", "Feedback", "Event", "Activity"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms", "Registration"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms", "Registration", "Event"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms", "Registration", "Event", "Conference"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms", "Registration", "Event", "Conference", "Diversity"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms", "Registration", "Event", "Conference", "Security"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms", "Registration", "Event", "Conference", "Artificial Intelligence"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms", "Registration", "Event", "Seminar"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms", "Registration", "Event", "Seminar", "Business"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms", "Registration", "Event", "Seminar", "Technology"],
+        "keywords": []
+    },
+
+    {
+        "labels": ["Forms", "Registration", "Event", "Activity"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms", "Registration", "Event", "Activity", "Social"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms", "Registration", "Event", "Activity", "Brainstorm"],
+        "keywords": []
+    },
+    {
+        "labels": ["Forms", "Registration", "Event", "Activity", "Playback"],
+        "keywords": []
+    },
+
+    {
+        "labels": ["Purchases"],
+        "keywords": []
+    },
+    {
+        "labels": ["Contacts"],
+        "keywords": []
+    },
+    {
+        "labels": ["Resources"],
+        "keywords": ["google doc", "powerpoint presentation", "word document"]
+    }
+]
