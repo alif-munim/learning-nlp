@@ -56,3 +56,14 @@ else:
     response_json = response.json()
     model_id = response_json['model_id']
     print("Custom Model ID: ", model_id)
+    model_uri = os.getenv("URL") + "/v1/models/categories/" + model_id
+    response = requests.get(model_uri,
+        auth=(os.getenv("USER"), os.getenv("PASS")),
+        params=params,
+        verify=False,
+        headers=headers
+    )
+
+    print("Model retrieved: ", response.status_code)
+    response_json = response.json()
+    print("Response from NLU:\n", json.dumps(response_json, indent=4, sort_keys=True))

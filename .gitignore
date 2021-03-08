@@ -1,3 +1,4 @@
 .+~
 *creds*
 /doc-tutorial-downloads
+*.env
