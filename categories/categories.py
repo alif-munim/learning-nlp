@@ -36,7 +36,7 @@ training_data = [
     {
         "labels": ["Contacts", "List", "Leads"],
         "key_phrases": ["leads", "potential buyers", "interested parties", "purchases"]
-    },
+    }
 ]
 
 training_data_filename = "training_data.json"
